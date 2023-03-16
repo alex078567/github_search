@@ -1,0 +1,162 @@
+*,
+*::after,
+*::before {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	box-sizing: border-box;
+	font-size: 1.4rem;
+	line-height: 2.4rem;
+	font-weight: 400;
+}
+
+.github-search-block {
+	max-width: 136.6rem;
+	min-width: 50rem;
+	padding: 0 26rem;
+	margin: 6.4rem auto;
+	text-align: center;
+}
+.github-search-block__header {
+	margin-bottom: 4rem;
+	font-size: 3.6rem;
+	line-height: 1.2;
+	padding: 0 1.6rem;
+}
+
+.form-container {
+	margin-bottom: 3.6rem;
+}
+
+.form-container__header {
+	margin-bottom: 0.8rem;
+	margin-bottom: 1.6rem;
+}
+
+.form__label {
+	display: block;
+	font-size: 1.6rem;
+	margin-bottom: 0.8rem;
+	letter-spacing: 0.1rem;
+}
+
+.form__text-input {
+	width: 50%;
+	font-size: 1.6rem;
+	padding: 0.6rem 1.2rem;
+	border-radius: 0.4rem;
+	background: #f0f4f8;
+	border: 1px solid #bcccdc;
+	margin-bottom: 0.8rem;
+}
+
+.form__error-text {
+	color: red;
+}
+
+.form__button {
+	margin-top: 3.2rem;
+	padding: 1.6rem 3.2rem;
+	border: none;
+	background-color: #a9b8c6;
+	text-transform: uppercase;
+	border-radius: 1rem;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+.form__button:hover {
+	background-color: #cbd4dd;
+}
+
+.repository-container {
+	min-height: 10rem;
+	padding: 0 10rem;
+	text-align: start;
+	position: relative;
+}
+
+.repository-container__nothing-found {
+	color: #4d4d4d;
+	font-size: 2.4rem;
+	line-height: 1.2;
+	padding: 0 1rem;
+}
+.repository {
+	border-bottom: 0.2rem solid #989898;
+	margin-bottom: 1rem;
+}
+.repository__field-description {
+	color: #989898;
+	margin-bottom: 1rem;
+}
+.repository__name {
+	margin-bottom: 1.6rem;
+}
+.repository__name-link:link,
+.repository__name-link:visited {
+	text-decoration: none;
+	color: black;
+	transition: all 0.3s;
+}
+.repository__name-link:hover,
+.repository__name-link:active {
+	color: #808080;
+}
+.repository__owner-container {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	margin-bottom: 1.6rem;
+}
+.repository__owner-avatar {
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+}
+
+.repository__stars-forks-container {
+	display: flex;
+	align-items: center;
+	gap: 1.2rem;
+}
+.repository__icon {
+	font-size: 1.6rem;
+}
+
+.loader {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 1;
+	margin-left: -6rem;
+	margin-top: -3rem;
+	border: 10px solid #f3f3f3; /* Light grey */
+	border-top: 10px solid #3498db; /* Blue */
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@media (max-width: 1200px) {
+	.github-search-block {
+		padding: 0 5rem;
+	}
+}
